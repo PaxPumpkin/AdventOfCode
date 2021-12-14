@@ -97,7 +97,7 @@ namespace AoC_2021
          for (int x = 0; x < thisManyTimes; x++)
             MagicTransform();
       }
-      private static void MagicTransform() //PaxTech™ Powered
+      private static void MagicTransform() //PaxTech™ Powered - It's a miracle it works!
       {
          char transformationInsertion;
          string newFirstPair, newSecondPair;
