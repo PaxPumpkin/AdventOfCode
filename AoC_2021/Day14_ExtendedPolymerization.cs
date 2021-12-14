@@ -17,37 +17,36 @@ namespace AoC_2021
          //** > Result for Day14_ExtendedPolymerization part 1: Difference Between Most and Least is 2975 (Process: 0.5294 ms)
          //** > Result for Day14_ExtendedPolymerization part 2: Difference Between Most and Least is 3015383850689 (Process: 1.3194 ms)
          ResetProcessTimer(true);
-         Polymerizer.SetInput(inputFile);
-         Polymerizer.DoTransformation(10);
-         AddResult("Difference Between Most and Least is " + Polymerizer.Answer);
+         Polymerizer polymerizer = new Polymerizer();
+         polymerizer.SetInput(inputFile);
+         polymerizer.DoTransformation(10);
+         AddResult("Difference Between Most and Least is " + polymerizer.Answer);
          ResetProcessTimer(true);
-         Polymerizer.DoTransformation(30); // for total 40 transforms as per puzzle instructions
-         AddResult("Difference Between Most and Least is " + Polymerizer.Answer);
+         polymerizer.DoTransformation(30); // for total 40 transforms as per puzzle instructions
+         AddResult("Difference Between Most and Least is " + polymerizer.Answer);
          ResetProcessTimer(true);
       }
    }
    public class Polymerizer
    {
-      private static string originalPolymerTemplate = "";
+      private string originalPolymerTemplate = "";
 
-      private static Dictionary<string, char> pairTransformationRules = new Dictionary<string, char>();
-      private static Dictionary<string, long> pairBuckets = new Dictionary<string, long>();
-      private static Dictionary<string, long> elementCounters = new Dictionary<string, long>();
-      private static long MostCommon { get { return elementCounters.Max(kvp => kvp.Value); } }
-      private static long LeastCommon { get { return elementCounters.Min(kvp => kvp.Value); } }
-      public static string Answer { get { return (MostCommon - LeastCommon).ToString(); } }
+      private Dictionary<string, char> pairTransformationRules = new Dictionary<string, char>();
+      private Dictionary<string, long> pairBuckets = new Dictionary<string, long>();
+      private Dictionary<string, long> elementCounters = new Dictionary<string, long>();
+      private long MostCommon { get { return elementCounters.Max(kvp => kvp.Value); } }
+      private long LeastCommon { get { return elementCounters.Min(kvp => kvp.Value); } }
+      public string Answer { get { return (MostCommon - LeastCommon).ToString(); } }
 
       public Polymerizer()
       {
-         //never instantiated
       }
-      public static void SetInput(List<string> allInput)
+      public void SetInput(List<string> allInput)
       {
-         Clear();
          allInput.ForEach(line => ParseInput(line));
          SetStartingConditions();
       }
-      private static void ParseInput(string line)
+      private void ParseInput(string line)
       {
          if (line != "")
          {
@@ -64,22 +63,16 @@ namespace AoC_2021
             }
          }
       }
-      private static void Clear()
-      {
-         pairTransformationRules.Clear();
-         pairBuckets.Clear();
-         elementCounters.Clear();
-      }
-      private static void AddOrIncrement(Dictionary<string, long> dictionary, string key, long value = 1)
+      private void AddOrIncrement(Dictionary<string, long> dictionary, string key, long value = 1)
       {
          if (!dictionary.ContainsKey(key)) dictionary.Add(key, value);
          else dictionary[key] += value;
       }
-      private static void AddOrIncrement(Dictionary<string, long> dictionary, char key, long value = 1)
+      private void AddOrIncrement(Dictionary<string, long> dictionary, char key, long value = 1)
       {
          AddOrIncrement(dictionary, key.ToString(), value);
       }
-      private static void SetStartingConditions()
+      private void SetStartingConditions()
       {
          for (int x = 0; x < originalPolymerTemplate.Length - 1; x++) // will get everything but last single char
          {
@@ -92,12 +85,12 @@ namespace AoC_2021
          // count last single char
          AddOrIncrement(elementCounters, originalPolymerTemplate.Substring(originalPolymerTemplate.Length - 1));
       }
-      public static void DoTransformation(int thisManyTimes)
+      public void DoTransformation(int thisManyTimes)
       {
          for (int x = 0; x < thisManyTimes; x++)
             MagicTransform();
       }
-      private static void MagicTransform() //PaxTech™ Powered - It's a miracle it works!
+      private void MagicTransform() //PaxTech™ Powered - It's a miracle it works!
       {
          char transformationInsertion;
          string newFirstPair, newSecondPair;
