@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F16A887-9FDF-4CE4-81B6-73A9DAD0CB45}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AoC_2021</RootNamespace>
+    <AssemblyName>AoC_2021</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AoC_2021.AoCodeShell</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AoCodeModule.cs" />
+    <Compile Include="Day01_SonarSweep.cs" />
+    <Compile Include="Day02_Dive.cs" />
+    <Compile Include="Day03_BinaryDiagnostic.cs" />
+    <Compile Include="Day04_GiantSquid.cs" />
+    <Compile Include="Day05_HydrothermalVenture.cs" />
+    <Compile Include="Day06_Lanternfish.cs" />
+    <Compile Include="Day07_TheTreacheryOfWhales.cs" />
+    <Compile Include="Day08_SevenSegmentSearch.cs" />
+    <Compile Include="Day09_SmokeBasin.cs" />
+    <Compile Include="Day10_SyntaxScoring.cs" />
+    <Compile Include="Day11_DumboOctopuses.cs" />
+    <Compile Include="Day12_PassagePathing.cs" />
+    <Compile Include="Day13_TransparentOrigami.cs" />
+    <Compile Include="Day14_ExtendedPolymerization.cs" />
+    <Compile Include="FunUtilities.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="LeaderBoardGeneva.cs" />
+    <Compile Include="LeaderBoardPrivate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="InputFiles\Day01_SonarSweep.txt" />
+    <Content Include="InputFiles\Day02_Dive.txt" />
+    <Content Include="InputFiles\Day03_BinaryDiagnosticSample.txt" />
+    <Content Include="InputFiles\Day03_BinaryDiagnostic.txt" />
+    <Content Include="InputFiles\Day04_GiantSquid.txt" />
+    <Content Include="InputFiles\Day05_HydrothermalVenture.txt" />
+    <Content Include="InputFiles\Day06_Lanternfish.txt" />
+    <Content Include="InputFiles\Day07_TheTreacheryOfWhalesSample.txt" />
+    <Content Include="InputFiles\Day07_TheTreacheryOfWhales.txt" />
+    <Content Include="InputFiles\Day08_SevenSegmentSearch.txt" />
+    <Content Include="InputFiles\Day09_SmokeBasinSample.txt" />
+    <Content Include="InputFiles\Day09_SmokeBasin.txt" />
+    <Content Include="InputFiles\Day10_SyntaxScoringSample.txt" />
+    <Content Include="InputFiles\Day10_SyntaxScoring.txt" />
+    <Content Include="InputFiles\Day11_DumboOctopusesSample.txt" />
+    <Content Include="InputFiles\Day11_DumboOctopuses.txt" />
+    <Content Include="InputFiles\Day12_PassagePathingSample3.txt" />
+    <Content Include="InputFiles\Day12_PassagePathingSample2.txt" />
+    <Content Include="InputFiles\Day12_PassagePathingSample.txt" />
+    <Content Include="InputFiles\Day12_PassagePathing.txt" />
+    <Content Include="InputFiles\Day13_TransparentOrigamiSample.txt" />
+    <Content Include="InputFiles\Day13_TransparentOrigami.txt" />
+    <Content Include="InputFiles\Day14_ExtendedPolymerizationSample.txt" />
+    <Content Include="InputFiles\Day14_ExtendedPolymerization.txt" />
+    <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
+    <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

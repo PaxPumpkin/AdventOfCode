@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E984B3B-72DE-4737-8BB7-6DDFB4432119}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AoC_2016</RootNamespace>
+    <AssemblyName>AoC_2016</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AoC_2016.AoCodeShell</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AoCodeModule.cs" />
+    <Compile Include="Day01_NoTimeForATaxicab.cs" />
+    <Compile Include="Day02_BathroomSecurity.cs" />
+    <Compile Include="Day03_SquaresWithThreeSides.cs" />
+    <Compile Include="Day04_SecurityThroughObscurity.cs" />
+    <Compile Include="Day05_HowAboutANiceGameOfChess.cs" />
+    <Compile Include="Day06_SignalsAndNoise.cs" />
+    <Compile Include="Day07_InternetProtocolVersion7.cs" />
+    <Compile Include="Day08_TwoFactorAuthentication.cs" />
+    <Compile Include="Day09_ExplosivesInCyberspace.cs" />
+    <Compile Include="Day10_BalanceBots.cs" />
+    <Compile Include="Day11_RadioisotopeThermoelectricGenerators.cs" />
+    <Compile Include="Day12_LeonardosMonorail.cs" />
+    <Compile Include="Day13_AMazeOfTwistyLittleCubicles.cs" />
+    <Compile Include="Day14_OneTimePad.cs" />
+    <Compile Include="Day15_TimingIsEverything.cs" />
+    <Compile Include="Day16_DragonChecksum.cs" />
+    <Compile Include="Day17_TwoStepsForward.cs" />
+    <Compile Include="Day18_LikeARogue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="zLeaderBoard.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="InputFiles\Day01_NoTimeForATaxicab.txt" />
+    <Content Include="InputFiles\Day02_BathroomSecurity.txt" />
+    <Content Include="InputFiles\Day03_SquaresWithThreeSides.txt" />
+    <Content Include="InputFiles\Day04_SecurityThroughObscurity.txt" />
+    <Content Include="InputFiles\Day05_HowAboutANiceGameOfChess.txt" />
+    <Content Include="InputFiles\Day06_SignalsAndNoise.txt" />
+    <Content Include="InputFiles\Day07_InternetProtocolVersion7.txt" />
+    <Content Include="InputFiles\Day08_TwoFactorAuthentication.txt" />
+    <Content Include="InputFiles\Day09_ExplosivesInCyberspace.txt" />
+    <Content Include="InputFiles\Day10_BalanceBots.txt" />
+    <Content Include="InputFiles\Day11_RadioisotopeThermoelectricGenerators.txt" />
+    <Content Include="InputFiles\Day12_LeonardosMonorail.txt" />
+    <Content Include="InputFiles\Day13_AMazeOfTwistyLittleCubicles.txt" />
+    <Content Include="InputFiles\Day14_OneTimePad.txt" />
+    <Content Include="InputFiles\Day15_TimingIsEverything.txt" />
+    <Content Include="InputFiles\Day16_DragonChecksum.txt" />
+    <Content Include="InputFiles\Day17_TwoStepsForward.txt" />
+    <Content Include="InputFiles\Day18_LikeARogue.txt" />
+    <Content Include="InputFiles\zLeaderBoard.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D955EBF2-2BB3-41A3-91AD-9E9930370F74}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BunnyHeadquarters</RootNamespace>
+    <AssemblyName>BunnyHeadquarters</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BunnyHeadquarters.AoCodeShell</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AoCodeModule.cs" />
+    <Compile Include="BadTriangles.cs" />
+    <Compile Include="BathroomSecurity.cs" />
+    <Compile Include="CAPTCHA.cs" />
+    <Compile Include="CoprocessorConflagration.cs" />
+    <Compile Include="DateTimeFun.cs" />
+    <Compile Include="DigitalPlumber.cs" />
+    <Compile Include="DiskDefrag.cs" />
+    <Compile Include="DuelingGenerators.cs" />
+    <Compile Include="Duet.cs" />
+    <Compile Include="ElectromagneticMoat.cs" />
+    <Compile Include="FractalArt.cs" />
+    <Compile Include="GarbageInTheStream.cs" />
+    <Compile Include="HaltingProblem.cs" />
+    <Compile Include="HexGrid.cs" />
+    <Compile Include="KnotHash.cs" />
+    <Compile Include="MemoryReallocation.cs" />
+    <Compile Include="MessingAroundWithYield.cs" />
+    <Compile Include="PacketScanners.cs" />
+    <Compile Include="ParticleSwarm.cs" />
+    <Compile Include="Passphrases.cs" />
+    <Compile Include="AoCodeItem.cs" />
+    <Compile Include="PermutationPromenade.cs" />
+    <Compile Include="RecursionTower.cs" />
+    <Compile Include="Registers.cs" />
+    <Compile Include="SeriesOfTubes.cs" />
+    <Compile Include="Spinlock.cs" />
+    <Compile Include="SpiralMemory.cs" />
+    <Compile Include="CorruptionChecksum.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scrambler.cs" />
+    <Compile Include="Euler.cs" />
+    <Compile Include="SporificaVirus.cs" />
+    <Compile Include="Trampolines.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

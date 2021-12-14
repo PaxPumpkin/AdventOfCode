@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E821D0E0-A4C4-4047-89C1-751108EE7605}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AoC_2019</RootNamespace>
+    <AssemblyName>AoC_2019</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AoC_2019.AoCodeShell</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AoCodeModule.cs" />
+    <Compile Include="Day01_TheTyrannyOfTheRocketEquation.cs" />
+    <Compile Include="Day02_1202ProgramAlarm.cs" />
+    <Compile Include="Day03_CrossedWires.cs" />
+    <Compile Include="Day04_SecureContainer.cs" />
+    <Compile Include="Day05_SunnyWithAChanceOfAsteroids.cs" />
+    <Compile Include="Day06_UniversalOrbitMap.cs" />
+    <Compile Include="Day07_AmplificationCircuit.cs" />
+    <Compile Include="Day08_SpaceImageFormat.cs" />
+    <Compile Include="Day09_SensorBoost.cs" />
+    <Compile Include="Day10_MonitoringStation.cs" />
+    <Compile Include="Day11_SpacePolice.cs" />
+    <Compile Include="FunUtilities.cs" />
+    <Compile Include="IntCodeComputer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="InputFiles\Day01_TheTyrannyOfTheRocketEquation.txt" />
+    <Content Include="InputFiles\Day02_1202ProgramAlarm.txt" />
+    <Content Include="InputFiles\Day03_CrossedWires.txt" />
+    <Content Include="InputFiles\Day04_SecureContainer.txt" />
+    <Content Include="InputFiles\Day05_SunnyWithAChanceOfAsteroids.txt" />
+    <Content Include="InputFiles\Day06_UniversalOrbitMap.txt" />
+    <Content Include="InputFiles\Day07_AmplificationCircuit.txt" />
+    <Content Include="InputFiles\Day08_SpaceImageFormat.txt" />
+    <Content Include="InputFiles\Day09_SensorBoostSample.txt" />
+    <Content Include="InputFiles\Day09_SensorBoost.txt" />
+    <Content Include="InputFiles\Day10_MonitoringStationSample5.txt" />
+    <Content Include="InputFiles\Day10_MonitoringStationSample4.txt" />
+    <Content Include="InputFiles\Day10_MonitoringStationSample3.txt" />
+    <Content Include="InputFiles\Day10_MonitoringStationSample2.txt" />
+    <Content Include="InputFiles\Day10_MonitoringStationSample1.txt" />
+    <Content Include="InputFiles\Day10_MonitoringStation.txt" />
+    <Content Include="InputFiles\Day11_SpacePolice.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
