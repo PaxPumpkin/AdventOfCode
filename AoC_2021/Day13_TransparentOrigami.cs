@@ -111,14 +111,16 @@ namespace AoC_2021
       public static void Display()
       {
          Console.Clear();
-         ConsoleColor original = Console.ForegroundColor;
-         Console.ForegroundColor = ConsoleColor.Red; // make pretty
+         ConsoleColor originalFG = Console.ForegroundColor; //save for after
+         ConsoleColor originalBG = Console.BackgroundColor;
+         Console.ForegroundColor = Console.BackgroundColor = ConsoleColor.Red; // make pretty, and solid blocks
          foreach (PointDescription point in MarkedPoints)
          {
             Console.SetCursorPosition(point.X, point.Y);
             Console.Write('#');
          }
-         Console.ForegroundColor = original;
+         Console.ForegroundColor = originalFG;//put back
+         Console.BackgroundColor = originalBG;
          Console.SetCursorPosition(0, MarkedPoints.Max(point => point.Y) + 1); // set appropriate position for result output
       }
    }
