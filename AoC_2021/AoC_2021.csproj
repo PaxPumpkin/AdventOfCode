@@ -65,6 +65,8 @@
     <Compile Include="Day12_PassagePathing.cs" />
     <Compile Include="Day13_TransparentOrigami.cs" />
     <Compile Include="Day14_ExtendedPolymerization.cs" />
+    <Compile Include="Day15_Chiton.cs" />
+    <Compile Include="Day16_PacketDecoder.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
@@ -101,6 +103,24 @@
     <Content Include="InputFiles\Day13_TransparentOrigami.txt" />
     <Content Include="InputFiles\Day14_ExtendedPolymerizationSample.txt" />
     <Content Include="InputFiles\Day14_ExtendedPolymerization.txt" />
+    <Content Include="InputFiles\Day15_ChitonSample.txt" />
+    <Content Include="InputFiles\Day15_Chiton.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderMainSample.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample21.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample22.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample23.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample24.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample25.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample26.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample27.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample28.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample5.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample4.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample3.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample2.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoderSample1.txt" />
+    <Content Include="InputFiles\Day16_PacketDecoder.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>
