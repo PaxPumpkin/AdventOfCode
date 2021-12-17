@@ -67,6 +67,7 @@
     <Compile Include="Day14_ExtendedPolymerization.cs" />
     <Compile Include="Day15_Chiton.cs" />
     <Compile Include="Day16_PacketDecoder.cs" />
+    <Compile Include="Day17_TrickShot.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
@@ -121,6 +122,8 @@
     <Content Include="InputFiles\Day16_PacketDecoderSample2.txt" />
     <Content Include="InputFiles\Day16_PacketDecoderSample1.txt" />
     <Content Include="InputFiles\Day16_PacketDecoder.txt" />
+    <Content Include="InputFiles\Day17_TrickShotSample.txt" />
+    <Content Include="InputFiles\Day17_TrickShot.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>
