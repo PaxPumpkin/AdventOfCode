@@ -68,6 +68,10 @@
     <Compile Include="Day15_Chiton.cs" />
     <Compile Include="Day16_PacketDecoder.cs" />
     <Compile Include="Day17_TrickShot.cs" />
+    <Compile Include="Day18_Snailfish.cs" />
+    <Compile Include="Day19_BeaconScanner.cs" />
+    <Compile Include="Day20_TrenchMap.cs" />
+    <Compile Include="Day21_DiracDice.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
@@ -124,6 +128,16 @@
     <Content Include="InputFiles\Day16_PacketDecoder.txt" />
     <Content Include="InputFiles\Day17_TrickShotSample.txt" />
     <Content Include="InputFiles\Day17_TrickShot.txt" />
+    <Content Include="InputFiles\Day18_SnailfishSampleExplode.txt" />
+    <Content Include="InputFiles\Day18_SnailfishSample3.txt" />
+    <Content Include="InputFiles\Day18_SnailfishSample2.txt" />
+    <Content Include="InputFiles\Day18_SnailfishSample.txt" />
+    <Content Include="InputFiles\Day18_Snailfish.txt" />
+    <Content Include="InputFiles\Day19_BeaconScanner.txt" />
+    <Content Include="InputFiles\Day20_TrenchMapSample.txt" />
+    <Content Include="InputFiles\Day20_TrenchMap.txt" />
+    <Content Include="InputFiles\Day21_DiracDiceSample.txt" />
+    <Content Include="InputFiles\Day21_DiracDice.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>

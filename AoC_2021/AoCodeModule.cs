@@ -211,5 +211,10 @@ namespace AoC_2021
          }
          return total;
       }
+      public static string ToString(this PointDescription pointDescription)
+      {
+         return pointDescription.X.ToString() + "," + pointDescription.Y.ToString();
+      }
    }
+
 }
