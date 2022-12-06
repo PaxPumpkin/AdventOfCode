@@ -72,6 +72,7 @@
     <Compile Include="Day19_BeaconScanner.cs" />
     <Compile Include="Day20_TrenchMap.cs" />
     <Compile Include="Day21_DiracDice.cs" />
+    <Compile Include="Day22_ReactorReboot.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
@@ -138,6 +139,9 @@
     <Content Include="InputFiles\Day20_TrenchMap.txt" />
     <Content Include="InputFiles\Day21_DiracDiceSample.txt" />
     <Content Include="InputFiles\Day21_DiracDice.txt" />
+    <Content Include="InputFiles\Day22_ReactorRebootSample2.txt" />
+    <Content Include="InputFiles\Day22_ReactorRebootSample.txt" />
+    <Content Include="InputFiles\Day22_ReactorReboot.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>
