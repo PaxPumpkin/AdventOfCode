@@ -57,6 +57,7 @@
     <Compile Include="Day04_CampCleanup.cs" />
     <Compile Include="Day05_SupplyStacks.cs" />
     <Compile Include="Day06_TuningTrouble.cs" />
+    <Compile Include="Day07_NoSpaceLeftOnDevice.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
     <Compile Include="LeaderBoardPrivate.cs" />
@@ -74,6 +75,8 @@
     <Content Include="InputFiles\Day04_CampCleanup.txt" />
     <Content Include="InputFiles\Day05_SupplyStacks.txt" />
     <Content Include="InputFiles\Day06_TuningTrouble.txt" />
+    <Content Include="InputFiles\Day07_NoSpaceLeftOnDeviceSample.txt" />
+    <Content Include="InputFiles\Day07_NoSpaceLeftOnDevice.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>
