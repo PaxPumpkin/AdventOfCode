@@ -58,6 +58,8 @@
     <Compile Include="Day05_SupplyStacks.cs" />
     <Compile Include="Day06_TuningTrouble.cs" />
     <Compile Include="Day07_NoSpaceLeftOnDevice.cs" />
+    <Compile Include="Day08_TreetopTreeHouse.cs" />
+    <Compile Include="Day09_RopeBridge.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
     <Compile Include="LeaderBoardPrivate.cs" />
@@ -77,6 +79,11 @@
     <Content Include="InputFiles\Day06_TuningTrouble.txt" />
     <Content Include="InputFiles\Day07_NoSpaceLeftOnDeviceSample.txt" />
     <Content Include="InputFiles\Day07_NoSpaceLeftOnDevice.txt" />
+    <Content Include="InputFiles\Day08_TreetopTreeHouseSample.txt" />
+    <Content Include="InputFiles\Day08_TreetopTreeHouse.txt" />
+    <Content Include="InputFiles\Day09_RopeBridgeSample2.txt" />
+    <Content Include="InputFiles\Day09_RopeBridgeSample.txt" />
+    <Content Include="InputFiles\Day09_RopeBridge.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>
