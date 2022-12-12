@@ -60,6 +60,9 @@
     <Compile Include="Day07_NoSpaceLeftOnDevice.cs" />
     <Compile Include="Day08_TreetopTreeHouse.cs" />
     <Compile Include="Day09_RopeBridge.cs" />
+    <Compile Include="Day10_CathodeRayTube.cs" />
+    <Compile Include="Day11_MonkeyInTheMiddle.cs" />
+    <Compile Include="Day12_HillClimbingFuckery.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
     <Compile Include="LeaderBoardPrivate.cs" />
@@ -84,6 +87,13 @@
     <Content Include="InputFiles\Day09_RopeBridgeSample2.txt" />
     <Content Include="InputFiles\Day09_RopeBridgeSample.txt" />
     <Content Include="InputFiles\Day09_RopeBridge.txt" />
+    <Content Include="InputFiles\Day10_CathodeRayTubeSample1.txt" />
+    <Content Include="InputFiles\Day10_CathodeRayTubeSample2.txt" />
+    <Content Include="InputFiles\Day10_CathodeRayTube.txt" />
+    <Content Include="InputFiles\Day11_MonkeyInTheMiddleSample.txt" />
+    <Content Include="InputFiles\Day11_MonkeyInTheMiddle.txt" />
+    <Content Include="InputFiles\Day12_HillClimbingFuckerySample.txt" />
+    <Content Include="InputFiles\Day12_HillClimbingFuckery.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>
