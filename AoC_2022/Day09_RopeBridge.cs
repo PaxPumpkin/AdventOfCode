@@ -31,11 +31,12 @@ namespace AoC_2022
         }
         public void ProcessMovementCommand(string command, List<(int X, int Y)> knots, HashSet<(int X, int Y)> tailVisits)
         {
+            // command is a single line from the input 
             string[] parsed = command.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
             string direction = parsed[0];
             int numberOfSteps = int.Parse(parsed[1]);
             int xMovement, yMovement;
-            (int X, int Y) head;
+            (int X, int Y) head; //placeholder for tuple in list, since direct modification of the object in the list is iffy.
             for (int step = 0; step < numberOfSteps; step++)
             {
                 switch (direction)

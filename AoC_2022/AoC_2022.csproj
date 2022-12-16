@@ -63,6 +63,9 @@
     <Compile Include="Day10_CathodeRayTube.cs" />
     <Compile Include="Day11_MonkeyInTheMiddle.cs" />
     <Compile Include="Day12_HillClimbingFuckery.cs" />
+    <Compile Include="Day13_DistressSignal.cs" />
+    <Compile Include="Day14_RegolithReservoir.cs" />
+    <Compile Include="Day15_BeaconExclusionZone.cs" />
     <Compile Include="FunUtilities.cs" />
     <Compile Include="LeaderBoardGeneva.cs" />
     <Compile Include="LeaderBoardPrivate.cs" />
@@ -94,6 +97,12 @@
     <Content Include="InputFiles\Day11_MonkeyInTheMiddle.txt" />
     <Content Include="InputFiles\Day12_HillClimbingFuckerySample.txt" />
     <Content Include="InputFiles\Day12_HillClimbingFuckery.txt" />
+    <Content Include="InputFiles\Day13_DistressSignalSample.txt" />
+    <Content Include="InputFiles\Day13_DistressSignal.txt" />
+    <Content Include="InputFiles\Day14_RegolithReservoirSample.txt" />
+    <Content Include="InputFiles\Day14_RegolithReservoir.txt" />
+    <Content Include="InputFiles\Day15_BeaconExclusionZoneSample.txt" />
+    <Content Include="InputFiles\Day15_BeaconExclusionZone.txt" />
     <Content Include="InputFiles\zLeaderBoardGeneva.txt" />
     <Content Include="InputFiles\zLeaderBoardPrivate.txt" />
   </ItemGroup>

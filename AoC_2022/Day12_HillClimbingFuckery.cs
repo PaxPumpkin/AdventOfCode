@@ -71,7 +71,7 @@ namespace AoC_2022
                 Dictionary<int, HashSet<int>> cellsOnPath = path.GroupBy(c => c.Y)
                                                                 .ToDictionary(
                                                                     g => g.Key, g => new HashSet<int>(g.Select(c => c.X)));
-
+                ConsoleColor startingColor = Console.ForegroundColor;
                 foreach (var cell in Cells)
                 {
                     if (cell.X == 0)
@@ -90,7 +90,7 @@ namespace AoC_2022
                         Console.Write(cell.Value);
                     }
                 }
-
+                Console.ForegroundColor = startingColor;
                 Console.WriteLine();
             }
 
